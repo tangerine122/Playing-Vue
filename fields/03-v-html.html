@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-html</title>
+    <script src="https://cdn.bootcss.com/vue/2.5.18-beta.0/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-html="name"></div>
+    <div v-html="age"></div>
+</div>
+
+<script>
+    const app = new Vue({
+        //定义作用域
+        el: "#app",
+        data: {
+            name:`
+        <ul>
+            <li>刘德华</li>
+            <li>张学友</li>
+            <li>郭富城</li>
+        </ul>
+        `,
+            age: "22"
+        }
+    })
+</script>
+</body>
+</html>
